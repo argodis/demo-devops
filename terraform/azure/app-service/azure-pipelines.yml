@@ -1,0 +1,20 @@
+trigger:
+  paths:
+    include:
+    - tf
+
+variables:
+  terraformVersion: "1.0.11"
+  workingDirectory: "."
+
+stages:
+  - stage: lint
+    displayName: Lint
+    jobs:
+      - job: lint
+        displayName: Lint job
+        steps:
+          - template: azure-pipelines/terraform-lint.tpl.yaml
+            parameters:
+              terraformVersion: ${{ variables.terraformVersion }}
+              workingDirectory: ${{ variables.workingDirectory }}
