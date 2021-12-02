@@ -1,2 +1,4 @@
-# demo-devops
-Demo repository for devops projects
+Demo repository for devops projects.
+
+Subdirectories contain documentation for each
+component or example.

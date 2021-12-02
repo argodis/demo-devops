@@ -1,6 +1,4 @@
 
-export ARM_SKIP_PROVIDER_REGISTRATION=true
-
 # Costs
 
 * disable expensive services while developing. Move 3-api-gateway.tf to 3-api-gateway.disabled
